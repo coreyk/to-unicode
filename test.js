@@ -6,6 +6,11 @@ tap.test('converts letters', function(t){
   t.end()
 })
 
+tap.test('converts numbers', function(t){
+  t.equal(toUnicode('boop', 'circled'), '12345')
+  t.end()
+})
+
 tap.test('ignores stuff it dont know about', function(t){
   t.equal(toUnicode('beep_*boop', 'fullWidth'), 'ｂｅｅｐ_*ｂｏｏｐ')
   t.end()

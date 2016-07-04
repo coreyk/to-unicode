@@ -4,7 +4,7 @@ module.exports = function(text, font){
   if(!font || !fonts[font]){
     font = Object.keys(fonts)[~~(Math.random() * Object.keys(fonts).length)]
   }
-  var alphabet = "abcdefghijklmnopqrstuvwxyz".split("")
+  var alphabet = "abcdefghijklmnopqrstuvwxyz0123456789".split("")
   var alph = fonts[font]
   var mappy = {}
   alphabet.forEach(function(l, i){
